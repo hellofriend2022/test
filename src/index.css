@@ -1,0 +1,89 @@
+:root {
+  --bg-base: #eef4f3;
+  --bg-elevated: rgba(255, 255, 255, 0.78);
+  --bg-solid: #ffffff;
+  --ink: #152628;
+  --ink-muted: #5a6b6c;
+  --ink-soft: #879496;
+  --teal-900: #0b4f54;
+  --teal-700: #1a8a7d;
+  --teal-500: #3ba99a;
+  --teal-200: #7dd3c0;
+  --teal-50: #e8f6f2;
+  --gain: #1a7a4c;
+  --gain-bg: rgba(26, 122, 76, 0.1);
+  --loss: #b5452d;
+  --loss-bg: rgba(181, 69, 45, 0.1);
+  --line: rgba(11, 79, 84, 0.1);
+  --shadow: 0 18px 40px rgba(21, 38, 40, 0.06);
+  --radius: 18px;
+  --radius-sm: 12px;
+  --sidebar-w: 248px;
+  --font-display: 'Sora', system-ui, sans-serif;
+  --font-body: 'Source Sans 3', system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--bg-base);
+  font-family: var(--font-body);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.is-up {
+  color: var(--gain);
+}
+
+.is-down {
+  color: var(--loss);
+}
+
+.mono {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum';
+}
